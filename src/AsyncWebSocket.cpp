@@ -679,9 +679,9 @@ void AsyncWebSocketClient::text(const char* message) {
   text(message, strlen(message));
 }
 
-void AsyncWebSocketClient::text(const String& message) {
+/* void AsyncWebSocketClient::text(const String& message) {
   text(message.c_str(), message.length());
-}
+} */
 
 #ifdef ESP8266
 void AsyncWebSocketClient::text(const __FlashStringHelper* data) {
@@ -727,9 +727,9 @@ void AsyncWebSocketClient::binary(const char* message) {
   binary(message, strlen(message));
 }
 
-void AsyncWebSocketClient::binary(const String& message) {
+/* void AsyncWebSocketClient::binary(const String& message) {
   binary(message.c_str(), message.length());
-}
+} */
 
 #ifdef ESP8266
 void AsyncWebSocketClient::binary(const __FlashStringHelper* data, size_t len) {
@@ -839,9 +839,9 @@ void AsyncWebSocket::text(uint32_t id, const char* message, size_t len) {
 void AsyncWebSocket::text(uint32_t id, const char* message) {
   text(id, message, strlen(message));
 }
-void AsyncWebSocket::text(uint32_t id, const String& message) {
+/* void AsyncWebSocket::text(uint32_t id, const String& message) {
   text(id, message.c_str(), message.length());
-}
+} */
 
 #ifdef ESP8266
 void AsyncWebSocket::text(uint32_t id, const __FlashStringHelper* data) {
@@ -884,9 +884,9 @@ void AsyncWebSocket::textAll(const char* message, size_t len) {
 void AsyncWebSocket::textAll(const char* message) {
   textAll(message, strlen(message));
 }
-void AsyncWebSocket::textAll(const String& message) {
+/* void AsyncWebSocket::textAll(const String& message) {
   textAll(message.c_str(), message.length());
-}
+} */
 #ifdef ESP8266
 void AsyncWebSocket::textAll(const __FlashStringHelper* data) {
   PGM_P p = reinterpret_cast<PGM_P>(data);
@@ -930,9 +930,9 @@ void AsyncWebSocket::binary(uint32_t id, const char* message, size_t len) {
 void AsyncWebSocket::binary(uint32_t id, const char* message) {
   binary(id, message, strlen(message));
 }
-void AsyncWebSocket::binary(uint32_t id, const String& message) {
+/* void AsyncWebSocket::binary(uint32_t id, const String& message) {
   binary(id, message.c_str(), message.length());
-}
+} */
 
 #ifdef ESP8266
 void AsyncWebSocket::binary(uint32_t id, const __FlashStringHelper* data, size_t len) {
@@ -966,9 +966,9 @@ void AsyncWebSocket::binaryAll(const char* message, size_t len) {
 void AsyncWebSocket::binaryAll(const char* message) {
   binaryAll(message, strlen(message));
 }
-void AsyncWebSocket::binaryAll(const String& message) {
+/* void AsyncWebSocket::binaryAll(const String& message) {
   binaryAll(message.c_str(), message.length());
-}
+} */
 
 #ifdef ESP8266
 void AsyncWebSocket::binaryAll(const __FlashStringHelper* data, size_t len) {

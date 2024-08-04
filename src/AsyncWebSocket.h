@@ -238,7 +238,7 @@ class AsyncWebSocketClient {
     void text(const uint8_t* message, size_t len);
     void text(const char* message, size_t len);
     void text(const char* message);
-    void text(const String& message);
+    //void text(const String& message);
 #ifndef ESP32
     void text(const __FlashStringHelper* message);
 #endif // ESP32
@@ -248,7 +248,7 @@ class AsyncWebSocketClient {
     void binary(const uint8_t* message, size_t len);
     void binary(const char* message, size_t len);
     void binary(const char* message);
-    void binary(const String& message);
+    //void binary(const String& message);
 #ifndef ESP32
     void binary(const __FlashStringHelper* message, size_t len);
 #endif // ESP32
@@ -305,7 +305,7 @@ class AsyncWebSocket : public AsyncWebHandler {
     void text(uint32_t id, const uint8_t* message, size_t len);
     void text(uint32_t id, const char* message, size_t len);
     void text(uint32_t id, const char* message);
-    void text(uint32_t id, const String& message);
+    //void text(uint32_t id, const String& message);
     void text(uint32_t id, AsyncWebSocketMessageBuffer* buffer);
     void text(uint32_t id, AsyncWebSocketSharedBuffer buffer);
 #ifdef ESP8266
@@ -315,7 +315,7 @@ class AsyncWebSocket : public AsyncWebHandler {
     void textAll(const uint8_t* message, size_t len);
     void textAll(const char* message, size_t len);
     void textAll(const char* message);
-    void textAll(const String& message);
+    //void textAll(const String& message);
 #ifdef ESP8266
     void textAll(const __FlashStringHelper* message);
 #endif // ESP8266
@@ -325,7 +325,7 @@ class AsyncWebSocket : public AsyncWebHandler {
     void binary(uint32_t id, const uint8_t* message, size_t len);
     void binary(uint32_t id, const char* message, size_t len);
     void binary(uint32_t id, const char* message);
-    void binary(uint32_t id, const String& message);
+    //void binary(uint32_t id, const String& message);
 #ifdef ESP8266
     void binary(uint32_t id, const __FlashStringHelper* message, size_t len);
 #endif // ESP8266
@@ -335,7 +335,7 @@ class AsyncWebSocket : public AsyncWebHandler {
     void binaryAll(const uint8_t* message, size_t len);
     void binaryAll(const char* message, size_t len);
     void binaryAll(const char* message);
-    void binaryAll(const String& message);
+    //void binaryAll(const String& message);
 #ifdef ESP8266
     void binaryAll(const __FlashStringHelper* message, size_t len);
 #endif // ESP8266
